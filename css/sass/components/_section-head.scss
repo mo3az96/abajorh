@@ -1,0 +1,47 @@
+.head {
+    margin-bottom: 26px;
+    text-align: center;
+    font-size: 24px;
+    color: $text;
+    font-family: med;
+}
+
+.footer-head {
+    font-size: 18px;
+    color: $text;
+    font-family: bold;
+    margin-bottom: 20px;
+}
+
+.news-header {
+    font-size: 17px;
+    color: $text;
+    font-family: bold;
+    margin-bottom: 19px;
+
+    @include sm {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+.odd-head {
+    font-size: 23px;
+    line-height: 1.2;
+    font-family: footer;
+    color: $text;
+    margin-top: -12px;
+
+    @include sm {
+        margin-top: 0;
+    }
+}
+
+.social {
+    position: relative;
+
+    .odd-head {
+        color: #fff;
+        line-height: 0.911;
+    }
+}

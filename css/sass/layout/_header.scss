@@ -1,0 +1,230 @@
+header {
+    background-color: $back;
+    position: relative;
+    z-index: 99;
+
+    @include xs {
+        position: static;
+    }
+}
+
+.top-links {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include xs {
+        height: 0;
+    }
+}
+
+.top-tag {
+    font-size: 14px;
+    margin-left: 14px;
+
+    &:before {
+        content: "#";
+    }
+
+    @include xs {
+        display: none;
+    }
+}
+
+.lang {
+    position: relative;
+
+    .lang-anchor {
+        font-size: 14px;
+        color: $lang;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        @include transition(all 0.3s ease-in-out);
+
+        img {
+            margin-left: 7px;
+
+            #{$ltr} & {
+                margin-right: 7px;
+                margin-left: 0;
+            }
+        }
+
+        &:after {
+            content: "\e874";
+            font-family: 'Linearicons-Free';
+            font-size: 8px;
+            margin-right: 4px;
+
+            #{$ltr} & {
+                margin-right: 0;
+                margin-left: 4px;
+            }
+        }
+
+        &:hover {
+            color: $red;
+
+            &:after {
+                color: $red;
+            }
+        }
+
+    }
+
+    .lang-dropdown {
+        position: absolute;
+        width: 121px;
+        height: auto;
+        right: -22px;
+        top: 125%;
+        z-index: 10;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.13);
+        padding: 10px 10px 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: none;
+        @include transition(all 0.3s ease-in-out);
+
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(20px);
+
+        #{$ltr} & {
+            right: -19px;
+        }
+
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            display: block;
+            border-width: 6px;
+            border-color: transparent transparent #ffffff;
+            border-style: solid;
+            top: -12px;
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        .lang-anchor {
+            width: 100%;
+            border-bottom: 1px solid #ebebeb;
+            padding-bottom: 8px;
+            margin-bottom: 6px;
+            justify-content: center;
+            color: $lang;
+
+            &:hover {
+                color: $red;
+            }
+
+            &:last-of-type {
+                border: none;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+
+
+    }
+
+    &:hover {
+        .lang-dropdown {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.header-cont {
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    @include xs {
+        padding: 7px 0;
+    }
+}
+
+.logo {
+    width: 159px;
+    display: block;
+
+    @include xs {
+        width: 100px;
+    }
+}
+
+.sec-div {
+    display: flex;
+    align-items: center;
+}
+
+.mo-user-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+    @include xs {
+        margin-right: 0;
+    }
+}
+
+.user-anchor {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: $text;
+    margin-left: 18px;
+    @include transition(all 0.3s ease-in-out);
+
+    .mo-text {
+        font-size: 14px;
+        margin-right: 5px;
+
+        @include sm {
+            display: none;
+        }
+    }
+
+    &:hover {
+        color: $red;
+    }
+
+    &.mo-cart-icon {
+        margin: 0;
+    }
+}
+
+.mo-overlay {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.302;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8;
+    display: none;
+
+    @include xs {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,147 @@
+.owl-carousel {
+    .owl-item {
+        img {
+            width: auto;
+        }
+    }
+
+    .owl-dots {
+        margin-top: 25px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        @include sm {
+            display: flex;
+        }
+
+        .owl-dot {
+            background: rgba(#000, 0.4);
+            outline: none;
+            border: none;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 2.5px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: $red;
+
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: $red;
+            }
+        }
+    }
+
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        @include sm {
+            display: none;
+        }
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            outline: none;
+            border: none;
+            color: #c3c3c3;
+            font-size: 18px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.owl-next {
+                left: -40px;
+            }
+
+            &.owl-prev {
+                right: -40px;
+            }
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
+
+.main-slider {
+    position: relative;
+    margin-top: 12px;
+
+    .owl-dots {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+
+        @include sm {
+            bottom: 10px;
+        }
+
+        .owl-dot {
+            background: rgba(#000, 0.4);
+            outline: none;
+            border: none;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 2.5px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: #fff;
+
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        @include sm {
+            display: none;
+        }
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            outline: none;
+            border: none;
+            color: #fff;
+            font-size: 24.22px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.owl-next {
+                left: 24px;
+            }
+
+            &.owl-prev {
+                right: 24px;
+            }
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}

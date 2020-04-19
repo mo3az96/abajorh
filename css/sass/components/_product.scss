@@ -1,0 +1,159 @@
+.product {
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    position: relative;
+    margin: auto;
+
+    .item-img {
+        display: block;
+        overflow: hidden;
+        padding-bottom: 100%;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include transition(all 0.3s ease-in-out);
+            backface-visibility: hidden;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .item-info {
+        padding: 18px 14px 17px;
+    }
+
+    .top-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .store {
+        @include transition(all 0.3s ease-in-out);
+        backface-visibility: hidden;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    .stars {
+        color: #dbdbdb;
+        font-size: 14px;
+
+        .active {
+            color: #fdcc09;
+        }
+    }
+
+    .pro-name {
+        margin-top: 10px;
+        font-size: 15px;
+        color: $text;
+        display: block;
+        max-width: 100%;
+        width: max-content;
+        line-height: 1.267;
+        margin-bottom: 5px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    .mo-old-price {
+        font-family: med;
+        color: #969696;
+        font-size: 16px;
+        text-decoration: line-through;
+        margin-left: 8px;
+    }
+
+    .mo-price {
+        font-family: bold;
+        color: $red;
+        font-size: 22px;
+    }
+
+    .tools {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 17px;
+
+        @include xs {
+            justify-content: center;
+        }
+    }
+
+    .mo-add-to {
+        background-color: #c3c3c3;
+        color: $text;
+        font-size: 16px;
+        display: flex;
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        align-items: center;
+        justify-content: center;
+        @include transition(all 0.3s ease-in-out);
+
+        @include xs {
+            margin: 0 2.5px;
+        }
+
+        &.mo-add-to-cart {
+            background-color: $blue;
+            color: #fff;
+            width: 156px;
+
+            span {
+                margin: 0 4px;
+
+                &.mo-text {
+                    font-size: 14px;
+                    font-family: med;
+                }
+            }
+        }
+
+        &:hover {
+            background-color: $red;
+            color: #fff;
+        }
+    }
+
+    .hint {
+        position: absolute;
+        top: 12px;
+        height: 26px;
+        line-height: 26px;
+        border-radius: 13px;
+        color: #fff;
+        font-family: med;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .gift {
+        left: 9px;
+        background-color: $red;
+    }
+
+    .sale {
+        right: 9px;
+        background-color: $green;
+    }
+
+}

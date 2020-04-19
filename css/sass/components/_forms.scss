@@ -1,0 +1,202 @@
+.search-cont {
+    position: relative;
+    height: 50px;
+    width: 556px;
+
+    @include sm {
+        width: 400px;
+    }
+
+    @include xs {
+        position: fixed;
+        top: 70px;
+        width: calc(100% - 30px);
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        z-index: 99;
+    }
+
+    &:after {
+        content: "";
+        height: 34px;
+        width: 2px;
+        background-color: #ededed;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 232px;
+
+        @include sm {
+            right: 200px;
+        }
+
+        @include xs {
+            right: 150px;
+        }
+
+        #{$ltr} & {
+            right: auto;
+            left: 232px;
+
+            @include sm {
+                left: 200px;
+            }
+
+            @include xs {
+                left: 150px;
+            }
+        }
+    }
+}
+
+.search-button {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+    background-color: $red;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+#{$ltr} .search-button {
+    left: auto;
+    right: 8px;
+}
+
+.search-input {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 250px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-align: right;
+    color: $text;
+    @include transition(all 0.3s ease-in-out);
+    border: 2px solid #ededed;
+
+    @include sm {
+        padding-right: 210px;
+    }
+
+    @include xs {
+        padding-right: 165px;
+    }
+
+    &::placeholder {
+        text-align: right;
+        color: #bbbbbb;
+        font-size: 14px;
+    }
+
+    &:focus {
+        border: 2px solid $red;
+    }
+}
+
+#{$ltr} .search-input {
+    padding-left: 250px;
+    padding-right: 40px;
+    text-align: left;
+
+    &::placeholder {
+        text-align: left;
+    }
+
+    @include sm {
+        padding-left: 210px;
+    }
+
+    @include xs {
+        padding-left: 165px;
+    }
+}
+
+/////////////news///////////////
+
+.newsletter-cont {
+    position: relative;
+}
+
+.newsletter-input {
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    border-radius: 22.5px;
+    padding: 0 27px;
+    font-size: 15px;
+    text-align: right;
+    color: $text;
+    border: 1px solid transparent;
+    @include transition(all 0.3s ease-in-out);
+
+    &::placeholder {
+        text-align: right;
+        font-size: 14px;
+        color: #bbbbbb;
+    }
+
+    &:focus {
+        border-color: $red;
+    }
+}
+
+
+#{$ltr} .newsletter-input {
+    text-align: left;
+
+    &::placeholder {
+        text-align: left;
+    }
+}
+
+.newsletter-button {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    @include transition(all 0.3s ease-in-out);
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: $red;
+    border: none;
+    font-size: 14px;
+
+    &:hover {
+        background-color: $blue;
+    }
+
+    &:after {
+        content: "\e879";
+        font-family: 'Linearicons-Free';
+    }
+}
+
+#{$ltr} .newsletter-button {
+    left: auto;
+    right: 7px;
+
+    &:after {
+        content: "\e87a";
+    }
+}
