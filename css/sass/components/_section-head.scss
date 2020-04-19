@@ -32,6 +32,12 @@
     color: $text;
     margin-top: -12px;
 
+    #{$ltr} & {
+        font-family: bold;
+        font-size: 17px;
+        margin-top: 0;
+    }
+
     @include sm {
         margin-top: 0;
     }

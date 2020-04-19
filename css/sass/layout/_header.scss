@@ -23,6 +23,11 @@ header {
     font-size: 14px;
     margin-left: 14px;
 
+    #{$ltr} & {
+        margin-left: 0;
+        margin-right: 14px;
+    }
+
     &:before {
         content: "#";
     }
@@ -182,8 +187,18 @@ header {
     align-items: center;
     margin-right: 40px;
 
+    #{$ltr} & {
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
     @include xs {
         margin-right: 0;
+
+        #{$ltr} & {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 }
 
@@ -195,9 +210,19 @@ header {
     margin-left: 18px;
     @include transition(all 0.3s ease-in-out);
 
+    #{$ltr} & {
+        margin-left: 0;
+        margin-right: 18px;
+    }
+
     .mo-text {
         font-size: 14px;
         margin-right: 5px;
+
+        #{$ltr} & {
+            margin-left: 5px;
+            margin-right: 0;
+        }
 
         @include sm {
             display: none;
@@ -210,6 +235,10 @@ header {
 
     &.mo-cart-icon {
         margin: 0;
+
+        #{$ltr} & {
+            margin: 0;
+        }
     }
 }
 

@@ -69,6 +69,7 @@
         width: max-content;
         line-height: 1.267;
         margin-bottom: 5px;
+        height: 38px;
         @include transition(all 0.3s ease-in-out);
 
         &:hover {

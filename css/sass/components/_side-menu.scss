@@ -76,6 +76,11 @@
     @include sm {
         width: 220px;
     }
+
+    #{$ltr} & {
+        right: auto;
+        left: 0;
+    }
 }
 
 
@@ -134,6 +139,11 @@
         width: 24px;
         margin-left: 8px;
 
+        #{$ltr} & {
+            margin-left: 0;
+            margin-right: 8px;
+        }
+
         img {
             -webkit-filter: invert(64%) sepia(74%) saturate(1%) hue-rotate(346deg) brightness(99%) contrast(87%);
             filter: invert(64%) sepia(74%) saturate(1%) hue-rotate(346deg) brightness(99%) contrast(87%);
@@ -158,6 +168,11 @@
     @include sm {
         width: 293px;
     }
+
+    #{$ltr} & {
+        right: auto;
+        left: 100%;
+    }
 }
 
 .sub-cats-links {
@@ -179,6 +194,11 @@
 
     &:nth-of-type(n + 6) {
         margin-right: auto;
+
+        #{$ltr} & {
+            margin-right: 0;
+            margin-left: auto;
+        }
     }
 }
 
@@ -195,6 +215,10 @@
 
 .more {
     text-align: left;
+
+    #{$ltr} & {
+        text-align: right;
+    }
 
     .more-anchor {
         font-size: 14px;
@@ -218,6 +242,11 @@
     flex-wrap: wrap;
     width: 293px;
 
+    #{$ltr} & {
+        padding-right: 34px;
+        padding-left: 31px;
+    }
+
     .store {
         width: 68px;
         height: 69px;
@@ -228,6 +257,11 @@
         border: 1px solid #e6e6e6;
         margin-bottom: 11px;
         @include transition(all 0.3s ease-in-out);
+
+        #{$ltr} & {
+            margin-right: 12px;
+            margin-left: 0;
+        }
 
         @include sm {
             display: none;
@@ -240,6 +274,11 @@
 
         &:nth-of-type(3n) {
             margin-left: 0;
+
+            #{$ltr} & {
+                margin-right: 0;
+                margin-left: 0;
+            }
         }
 
         &:nth-of-type(n + 7) {
@@ -261,6 +300,11 @@
         overflow: hidden;
         width: 50%;
         margin-left: 10px;
+
+        #{$ltr} & {
+            margin-right: 10px;
+            margin-left: 0;
+        }
 
         img {
             transform: scale(1);

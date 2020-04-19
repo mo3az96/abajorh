@@ -113,6 +113,9 @@
             opacity: 1;
             transform: none;
 
+            #{$ltr} & {
+                left: auto;
+            }
         }
 
         .sub-cats-links {
@@ -131,6 +134,10 @@
 
         .more {
             text-align: unset;
+
+            #{$ltr} & {
+                text-align: unset;
+            }
         }
     }
 }
@@ -162,8 +169,8 @@
 
 .user-anchor {
 
-    .mo-menu-icon,
-    .mo-search-icon {
+    &.mo-menu-icon,
+    &.mo-search-icon {
         display: none;
 
         @include xs {
