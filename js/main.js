@@ -133,4 +133,13 @@ $(document).ready(function () {
 
         $(".mo-accordion").not(this).siblings().css('max-height', '0');
     });
+
+
+    $("nav").scroll(function () {
+        if ($(this).scrollTop() >= 40) {
+            $(".lang").hide();
+        } else {
+            $(".lang").show();
+        }
+    });
 });
