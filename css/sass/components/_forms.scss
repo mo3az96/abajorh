@@ -9,12 +9,17 @@
 
     @include xs {
         position: fixed;
-        top: 70px;
+        top: 100px;
         width: calc(100% - 30px);
         left: 50%;
-        transform: translateX(-50%);
-        display: none;
+        transform: translateX(-50%) scaleX(0);
+        // display: none;
         z-index: 99;
+        @include transition(all 0.4s ease-in-out);
+
+        &.search-in {
+            transform: translateX(-50%) scaleX(1);
+        }
     }
 
     &:after {

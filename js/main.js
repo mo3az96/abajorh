@@ -87,14 +87,14 @@ $(document).ready(function () {
         $(".sub-cat").addClass("mo-panel");
         /////////////////////////////////////////////////
         $('.mo-search-icon').click(function () {
-            $(".search-cont").fadeIn(300);
+            $(".search-cont").addClass("search-in");
             $(".mo-overlay").fadeIn(300);
             $("body").addClass("overflow");
             $('.search-input').focus();
         });
         $('.mo-overlay').click(function () {
             $("body").removeClass("overflow");
-            $(".search-cont").fadeOut(300);
+            $(".search-cont").removeClass("search-in");
             $(".mo-overlay").fadeOut(300);
         });
         /////////////////////////////////////////////////////

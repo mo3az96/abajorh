@@ -118,12 +118,18 @@ html {
 @media (max-width: 767px) {
   .search-cont {
     position: fixed;
-    top: 70px;
+    top: 100px;
     width: calc(100% - 30px);
     left: 50%;
-    transform: translateX(-50%);
-    display: none;
+    transform: translateX(-50%) scaleX(0);
     z-index: 99;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .search-cont.search-in {
+    transform: translateX(-50%) scaleX(1);
   }
 }
 .search-cont:after {
