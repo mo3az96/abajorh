@@ -87,15 +87,15 @@ $(document).ready(function () {
         $(".sub-cat").addClass("mo-panel");
         /////////////////////////////////////////////////
         $('.mo-search-icon').click(function () {
-            $(".search-cont").fadeIn(500);
-            $(".mo-overlay").fadeIn(500);
+            $(".search-cont").fadeIn(300);
+            $(".mo-overlay").fadeIn(300);
             $("body").addClass("overflow");
             $('.search-input').focus();
         });
         $('.mo-overlay').click(function () {
             $("body").removeClass("overflow");
-            $(".search-cont").fadeOut(500);
-            $(".mo-overlay").fadeOut(500);
+            $(".search-cont").fadeOut(300);
+            $(".mo-overlay").fadeOut(300);
         });
         /////////////////////////////////////////////////////
         $('.mo-menu-icon').click(function () {
