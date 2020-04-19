@@ -15,7 +15,8 @@
         transform: translateX(-50%) scaleX(0);
         // display: none;
         z-index: 99;
-        @include transition(all 0.4s ease-in-out);
+        @include transition(all 0.3s ease-in-out);
+        backface-visibility: hidden;
 
         &.search-in {
             transform: translateX(-50%) scaleX(1);
