@@ -1897,12 +1897,12 @@ html[dir=ltr] .foot-anchor:hover {
     position: absolute;
     top: 0;
     bottom: 0;
-    height: 100vh;
     background-color: #fff;
     width: 280px;
     right: 0;
     transform-origin: right;
     transform: scaleX(0);
+    overflow-y: auto;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -1917,13 +1917,17 @@ html[dir=ltr] .foot-anchor:hover {
     transform: scaleX(1);
   }
   .nav-cont .mo-navbar {
-    height: 100%;
+    height: auto;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     margin: 0;
-    padding: 80px 25px;
+    margin: 80px 0 50px;
+    padding: 0 25px;
+    background-color: #fff;
+    position: relative;
+    z-index: 9999999;
   }
   .nav-cont .mo-navbar li {
     width: 100%;
@@ -1998,7 +2002,7 @@ html[dir=ltr] .foot-anchor:hover {
     top: 24px;
     right: 25px;
     left: auto;
-    z-index: 99999;
+    z-index: 999;
     margin: 0;
     transform: scaleX(0);
     transform-origin: right;

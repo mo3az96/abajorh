@@ -13,6 +13,7 @@ $(document).ready(function () {
         $('body').toggleClass("overflow");
         if ($(window).width() <= 767) {
             $(".mo-overlay").hide();
+            $('body').addClass("overflow");
         }
     });
     $('.mo-overlay').click(function () {

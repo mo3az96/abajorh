@@ -14,12 +14,12 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            height: 100vh;
             background-color: #fff;
             width: 280px;
             right: 0;
             transform-origin: right;
             transform: scaleX(0);
+            overflow-y: auto;
             @include transition(all 0.5s ease-in-out);
 
             #{$ltr} & {
@@ -34,13 +34,18 @@
         }
 
         .mo-navbar {
-            height: 100%;
+            height: auto;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
             width: 100%;
             margin: 0;
-            padding: 80px 25px;
+            margin: 80px 0 50px;
+            padding: 0 25px;
+
+            background-color: #fff;
+            position: relative;
+            z-index: 9999999;
 
             li {
                 &.cats-menu {
@@ -136,7 +141,7 @@
         top: 24px;
         right: 25px;
         left: auto;
-        z-index: 99999;
+        z-index: 999;
         margin: 0;
         transform: scaleX(0);
         transform-origin: right;
