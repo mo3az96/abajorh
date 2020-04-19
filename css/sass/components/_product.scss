@@ -4,6 +4,10 @@
     position: relative;
     margin: auto;
 
+    @include xs {
+        width: 75%;
+    }
+
     .item-img {
         display: block;
         overflow: hidden;
