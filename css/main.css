@@ -2204,7 +2204,7 @@ html[dir=ltr] .qr {
 }
 @media (max-width: 767px) {
   .user-anchor.mo-menu-icon, .user-anchor.mo-search-icon {
-    display: block;
+    display: flex;
   }
 }
 

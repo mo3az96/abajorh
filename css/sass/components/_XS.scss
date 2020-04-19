@@ -174,7 +174,7 @@
         display: none;
 
         @include xs {
-            display: block;
+            display: flex;
         }
     }
 }
