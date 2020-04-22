@@ -45,6 +45,12 @@
     .store {
         @include transition(all 0.3s ease-in-out);
         backface-visibility: hidden;
+        width: 44px;
+        display: block;
+
+        img {
+            max-width: 100%;
+        }
 
         &:hover {
             transform: translateY(-3px);

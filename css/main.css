@@ -720,6 +720,7 @@ html[dir=ltr] .stores {
 .stores .store {
   width: 68px;
   height: 69px;
+  padding: 10px 9px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1093,6 +1094,11 @@ html[dir=ltr] .odd-head {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   backface-visibility: hidden;
+  width: 44px;
+  display: block;
+}
+.product .store img {
+  max-width: 100%;
 }
 .product .store:hover {
   transform: translateY(-3px);
@@ -2263,7 +2269,7 @@ html[dir=ltr] .close-btn {
 }
 
 /* //////////////////////////////////////////////////////////////////*/
-.contact-content {
+.page-content {
   margin-top: 35px;
 }
 
@@ -2273,10 +2279,21 @@ html[dir=ltr] .close-btn {
   color: #444444;
   margin-bottom: 27px;
 }
+@media (max-width: 992px) {
+  .page-head {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
 
 .page-subhead {
   font-size: 17px;
   color: #444444;
+}
+@media (max-width: 992px) {
+  .page-subhead {
+    text-align: center;
+  }
 }
 
 .contact-infos {
@@ -2410,5 +2427,175 @@ html[dir=ltr] .mo-submit {
 
 /* //////////////////////////////////////////////////////////////////*/
 /* //////////////////////////////////////////////////////////////////*/
+.first-div .page-head {
+  font-family: med;
+  margin-bottom: 23px;
+}
+@media (max-width: 992px) {
+  .first-div .page-head {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .brands-cont {
+    margin-bottom: 30px;
+  }
+}
+
+.mo-brands {
+  background-color: #f2f2f2;
+  padding: 22px 34px;
+}
+.mo-brands .owl-nav button[class^=owl-] {
+  color: #ababab;
+}
+.mo-brands .owl-nav button[class^=owl-].owl-next {
+  left: -24px;
+}
+.mo-brands .owl-nav button[class^=owl-].owl-prev {
+  right: -24px;
+}
+.mo-brands .owl-nav button[class^=owl-]:hover {
+  color: #d55056;
+}
+
+.brand {
+  width: 123px;
+  height: 123px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 25px 20px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.brand img {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  backface-visibility: hidden;
+}
+.brand:hover {
+  border-color: #d55056;
+}
+.brand:hover img {
+  transform: translateY(-3px);
+}
+
+.ranges {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.range {
+  display: block;
+  text-align: center;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  background-color: #07788c;
+  font-size: 18px;
+  color: #fff;
+  font-family: med;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: calc(50% - 4.5px);
+  margin-left: 9px;
+  margin-bottom: 10px;
+}
+html[dir=ltr] .range {
+  margin-left: 0;
+  margin-right: 9px;
+}
+.range:nth-of-type(2n) {
+  margin-left: 0;
+}
+html[dir=ltr] .range:nth-of-type(2n) {
+  margin-left: 0;
+  margin-right: 0;
+}
+.range:nth-of-type(n + 5) {
+  margin-bottom: 0;
+}
+.range:hover {
+  background-color: #d55056;
+  color: #fff;
+}
+
+.cat-banners {
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 54px;
+}
+
+.cat-banner {
+  margin-left: 11px;
+  width: calc(50% - 5.5px);
+  margin-top: 12px;
+}
+html[dir=ltr] .cat-banner {
+  margin-left: 0;
+  margin-right: 11px;
+}
+@media (max-width: 992px) {
+  .cat-banner {
+    width: 100%;
+    margin-left: 0;
+  }
+  html[dir=ltr] .cat-banner {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.cat-banner:nth-of-type(2n) {
+  margin-left: 0;
+}
+html[dir=ltr] .cat-banner:nth-of-type(2n) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.cat-subbanners {
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 67px;
+}
+
+.subbanner {
+  margin-left: 12px;
+  width: calc(100% / 3 - 8px);
+  margin-top: 12px;
+}
+html[dir=ltr] .subbanner {
+  margin-left: 0;
+  margin-right: 12px;
+}
+@media (max-width: 992px) {
+  .subbanner {
+    width: 100%;
+    margin-left: 0;
+  }
+  html[dir=ltr] .subbanner {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.subbanner:nth-of-type(3n) {
+  margin-left: 0;
+}
+html[dir=ltr] .subbanner:nth-of-type(3n) {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 /*# sourceMappingURL=main.css.map */

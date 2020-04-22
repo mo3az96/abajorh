@@ -1,5 +1,5 @@
 /* //////////////////////////////////////////////////////////////////*/
-.contact-content {
+.page-content {
     margin-top: 35px;
 }
 
@@ -8,11 +8,20 @@
     font-family: bold;
     color: $text;
     margin-bottom: 27px;
+
+    @include sm {
+        margin-bottom: 15px;
+        text-align: center;
+    }
 }
 
 .page-subhead {
     font-size: 17px;
     color: $text;
+
+    @include sm {
+        text-align: center;
+    }
 }
 
 .contact-infos {

@@ -82,6 +82,33 @@ $(document).ready(function () {
             }
         }
     });
+    /////////////////////
+    $('.mo-brands .owl-carousel').owlCarousel({
+        items: 5,
+        autoplay: false,
+        margin: 18,
+        rtl: document.dir == 'rtl' ? true : false,
+        loop: true,
+        rewind: true,
+        nav: true,
+        dots: true,
+        navText: ["<span class='lnr lnr-chevron-right'></span>", "<span class='lnr lnr-chevron-left'></span>"],
+        responsive: {
+            0: {
+                items: 2,
+            },
+            500: {
+                items: 3,
+            },
+            992: {
+                items: 4,
+            },
+            1200: {
+                items: 5
+            }
+        }
+    });
+    ///////////
     if ($(window).width() <= 767) {
         $(".level-2-link").addClass("mo-accordion");
         $(".sub-cat").addClass("mo-panel");
