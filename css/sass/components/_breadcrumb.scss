@@ -1,0 +1,32 @@
+.mo-breadcrumb {
+    background-color: #f5f5f5;
+    padding: 11px 30px;
+    border-radius: 21px;
+    margin: 10px 0 0;
+
+    >li {
+        +li {
+            &::before {
+                padding: 0 9px;
+                font-size: 13px;
+                color: #666666;
+                content: "/";
+            }
+        }
+
+        font-size: 13px;
+        color: #666666;
+        padding: 0;
+
+        a {
+            font-size: 13px;
+            color: #666666;
+            @include transition(all 0.3s ease-in-out);
+
+            &:hover,
+            &:focus {
+                color: $red;
+            }
+        }
+    }
+}
