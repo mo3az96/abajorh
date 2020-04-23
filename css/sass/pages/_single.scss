@@ -528,6 +528,7 @@
     font-size: 17px;
     color: $text;
     display: block;
+    width: max-content;
     margin-bottom: 10px;
     @include transition(all 0.3s ease-in-out);
 

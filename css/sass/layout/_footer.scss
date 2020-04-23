@@ -260,7 +260,6 @@ footer {
 
 
         .footer-item {
-            width: 100%;
             margin-bottom: 8px;
 
             @include sm {
@@ -397,22 +396,6 @@ footer {
     }
 }
 
-.qr {
-    position: absolute;
-    right: 136px;
-    top: 40px;
-
-    @include sm {
-        display: none;
-    }
-
-    #{$ltr} & {
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        right: auto;
-        left: 136px;
-    }
-}
 
 .last-footer {
     border-top: 1px solid rgba(#000, 0.1);
@@ -440,4 +423,40 @@ footer {
             margin-top: 20px;
         }
     }
+}
+
+.download {
+    .footer-item {
+        position: relative;
+        width: max-content;
+
+        &:hover {
+            .qr {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    .qr {
+        position: absolute;
+        right: 105px;
+        top: 50%;
+        transform: translateY(-75%);
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all 0.3s ease-in-out);
+
+        @include sm {
+            display: none;
+        }
+
+        #{$ltr} & {
+            -webkit-transform: scaleX(-1) translateY(-75%);
+            transform: scaleX(-1) translateY(-75%);
+            right: auto;
+            left: 105px;
+        }
+    }
+
 }
