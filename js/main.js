@@ -108,6 +108,18 @@ $(document).ready(function () {
             }
         }
     });
+    /////////////////////
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 7,
+        slidesPerView: 4,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        effect: 'fade',
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
     ///////////
     if ($(window).width() <= 767) {
         $(".level-2-link").addClass("mo-accordion");

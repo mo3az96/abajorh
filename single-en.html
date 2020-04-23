@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/Linearicons.css" />
     <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -32,7 +33,7 @@
                 <div class="top-tags">
                     <span class="top-tag">Where could we get you</span>
                     <span class="top-tag">Return free</span>
-                    <span class="top-tag">Easily compare and buy smart</span>
+                    <span class="top-tag">Easily compare & buy smart</span>
                 </div>
                 <div class="lang">
                     <span class="fixall lang-anchor"><img src="images/en.png" alt="AR Lang">English</sapn>
@@ -229,10 +230,557 @@
     </nav>
     <!-- end breadcrumb -->
 
-    <!-- start cat-page -->
+    <!-- start single-page -->
     <div class="page-content">
+        <div class="single-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="single-name xs fixall">Product name
+                        </h2>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="mo-single-slider">
+                            <div class="swiper-container gallery-top">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a data-fancybox="gallery" href="images/pig-pro.jpg" class="top-img slider-img">
+                                            <img src="images/pig-pro.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a data-fancybox="gallery" href="images/pro1.jpg" class="top-img slider-img">
+                                            <img src="images/pro1.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a data-fancybox="gallery" href="images/pro2.jpg" class="top-img slider-img">
+                                            <img src="images/pro2.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="thumb-img slider-img">
+                                            <img src="images/pig-pro.jpg" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="thumb-img slider-img">
+                                            <img src="images/pro1.jpg" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="thumb-img slider-img">
+                                            <img src="images/pro2.jpg" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mo-single-desc">
+                            <h2 class="desc-title fixall">preview</h2>
+                            <p class="single-text fixall">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptatem dignissimos nesciunt rerum sed veniam ducimus?
+                            </p>
+                        </div>
+                        <div class="mo-single-btns">
+                            <a href="#!" class="mo-single-btn fixall">Product brochure</a>
+                            <a href="#!" class="mo-single-btn fixall">Specifications</a>
+                            <a href="#!" class="mo-single-btn fixall">Warranty policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xs-12">
+                        <div class="single-info">
+                            <div class="first-div">
+                                <div class="tags">
+                                    <span class="tag">SCK2010</span>
+                                    <span class="tag">5012010</span>
+                                </div>
+                                <div class="mo-share">
+                                    <span class="fas fa-share-alt"></span>
+                                    <span class="share-text">Share Product</span>
+                                </div>
+                            </div>
+                            <h2 class="single-name fixall">Product name
+                            </h2>
+                            <div class="reviews">
+                                <div class="stars">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <span class="rev-count">(0 Reviews)</span>
+                                <a href="#!" class="comment-link fixall">Write comment</a>
+                            </div>
+                            <div class="prices">
+                                <div class="mo-single-price">
+                                    <span class="price-head">Price</span>
+                                    <span class="mo-price">300 RAS</span>
+                                </div>
+                                <div class="mo-single-price">
+                                    <span class="price-head"> saved</span>
+                                    <span class="mo-save">50 RAS</span>
+                                    <div class="hint sale-hint">17% Sale</div>
+                                </div>
+                                <div class="mo-single-price ">
+                                    <span class="price-head mo-total-head">You Will Pay</span>
+                                    <span class="mo-total">250 RAS</span>
+                                    <div class="hint gift-hint">+ free gift</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-props">
+                            <div class="prop">
+                                <span class="prop-name req">Color</span>
+                                <label class="cust-check">
+                                    <input type="radio" name="prop-1" checked>
+                                    <span class="prop-text">color </span>
+                                </label>
+                                <label class="cust-check">
+                                    <input type="radio" name="prop-1">
+                                    <span class="prop-text">color</span>
+                                </label>
+                                <label class="cust-check">
+                                    <input type="radio" name="prop-1">
+                                    <span class="prop-text">color</span>
+                                </label>
+                            </div>
+                            <div class="prop">
+                                <span class="prop-name req">size</span>
+                                <label class="cust-check">
+                                    <input type="radio" name="prop-2" checked>
+                                    <span class="prop-text">size</span>
+                                </label>
+                                <label class="cust-check">
+                                    <input type="radio" name="prop-2">
+                                    <span class="prop-text">size</span>
+                                </label>
+                                <label class="cust-check">
+                                    <input type="radio" name="prop-2">
+                                    <span class="prop-text">size</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mo-single-tools">
+                            <div class="qty">
+                                <span class="qty-title">Quantity</span>
+                                <div class="qtySelector">
+                                    <span class="fas fa-plus qty-increas"></span>
+                                    <input class="qty-input fixall" type="number" value="1">
+                                    <span class="fas fa-minus qty-decreas"></span>
+                                </div>
+                            </div>
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">add to cart</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="seller">
+                            <span class="seller-title">Sold & delivered by</span>
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-responsive"></a>
+                        </div>
+                        <div class="mo-loc">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Delivery to Riyadh
+                        </div>
+                        <div class="single-feats">
+                            <div class="single-feat">
+                                <div class="single-feat-img">
+                                    <img src="images/single-feat1.png" class="img-responsive">
+                                </div>
+                                Free & easy returns
+                            </div>
+                            <div class="single-feat">
+                                <div class="single-feat-img">
+                                    <img src="images/single-feat2.png" class="img-responsive">
+                                </div>
+                                Fast delivery & installation
+                            </div>
+                            <div class="single-feat">
+                                <div class="single-feat-img">
+                                    <img src="images/single-feat3.png" class="img-responsive">
+                                </div>
+                                5-year warranty
+                            </div>
+                        </div>
+                        <div class="shop-advices">
+                            <h2 class="shop-sdvice-head fixall">Shopping tips</h2>
+                            <a href="#!" class="shop-advice fixall">The application process</a>
+                            <a href="#!" class="shop-advice fixall">Free delivery</a>
+                            <a href="#!" class="shop-advice fixall">Return policy</a>
+                            <a href="#!" class="shop-advice fixall">Paiement when recieving</a>
+                            <a href="#!" class="shop-advice fixall">Preparation & delivery time</a>
+                            <a href="#!" class="shop-advice fixall">payment methods</a>
+                            <a href="#!" class="shop-advice fixall">Help Center</a>
+                            <a href="#!" class="mo-single-btn fixall">Connect us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- end cat-page -->
+    <!-- end single-page -->
+    <!-- start products -->
+    <div class="products-sec first-slider">
+        <div class="container">
+            <h2 class="head fixall">Browse products</h2>
+            <div class="owl-carousel Product-slider">
+                <div class="product">
+                    <a href="single-en.html" class="fixall item-img">
+                        <img src="images/pro1.jpg" class="img-responsive">
+                    </a>
+                    <div class="item-info">
+                        <div class="top-info">
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-reponsive"></a>
+                            <div class="stars">
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href="single-en.html" class="pro-name fixall">product name product name product name</a>
+                        <span class="mo-old-price">120 R.S.</span>
+                        <span class="mo-price">82 R.S. </span>
+                        <div class="tools">
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">اضف للسلة</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hint gift">free gift</div>
+                    <div class="hint sale">17% sale</div>
+                </div>
+                <div class="product">
+                    <a href="single-en.html" class="fixall item-img">
+                        <img src="images/pro2.jpg" class="img-responsive">
+                    </a>
+                    <div class="item-info">
+                        <div class="top-info">
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-reponsive"></a>
+                            <div class="stars">
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href="single-en.html" class="pro-name fixall">product name product name product name</a>
+                        <span class="mo-old-price">120 R.S.</span>
+                        <span class="mo-price">82 R.S. </span>
+                        <div class="tools">
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">اضف للسلة</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hint gift">free gift</div>
+                    <div class="hint sale">17% sale</div>
+                </div>
+                <div class="product">
+                    <a href="single-en.html" class="fixall item-img">
+                        <img src="images/pro1.jpg" class="img-responsive">
+                    </a>
+                    <div class="item-info">
+                        <div class="top-info">
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-reponsive"></a>
+                            <div class="stars">
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href="single-en.html" class="pro-name fixall">product name product name product name</a>
+                        <span class="mo-old-price">120 R.S.</span>
+                        <span class="mo-price">82 R.S. </span>
+                        <div class="tools">
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">اضف للسلة</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hint gift">free gift</div>
+                    <div class="hint sale">17% sale</div>
+                </div>
+                <div class="product">
+                    <a href="single-en.html" class="fixall item-img">
+                        <img src="images/pro2.jpg" class="img-responsive">
+                    </a>
+                    <div class="item-info">
+                        <div class="top-info">
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-reponsive"></a>
+                            <div class="stars">
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href="single-en.html" class="pro-name fixall">product name product name product name</a>
+                        <span class="mo-old-price">120 R.S.</span>
+                        <span class="mo-price">82 R.S. </span>
+                        <div class="tools">
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">اضف للسلة</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hint gift">free gift</div>
+                    <div class="hint sale">17% sale</div>
+                </div>
+                <div class="product">
+                    <a href="single-en.html" class="fixall item-img">
+                        <img src="images/pro2.jpg" class="img-responsive">
+                    </a>
+                    <div class="item-info">
+                        <div class="top-info">
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-reponsive"></a>
+                            <div class="stars">
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href="single-en.html" class="pro-name fixall">product name product name product name</a>
+                        <span class="mo-old-price">120 R.S.</span>
+                        <span class="mo-price">82 R.S. </span>
+                        <div class="tools">
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">اضف للسلة</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hint gift">free gift</div>
+                    <div class="hint sale">17% sale</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end products -->
+
+    <!-- start products -->
+    <div class="products-sec">
+        <div class="container">
+            <h2 class="head fixall">Customers also viewed</h2>
+            <div class="owl-carousel Product-slider">
+                <div class="product">
+                    <a href="single-en.html" class="fixall item-img">
+                        <img src="images/pro1.jpg" class="img-responsive">
+                    </a>
+                    <div class="item-info">
+                        <div class="top-info">
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-reponsive"></a>
+                            <div class="stars">
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href="single-en.html" class="pro-name fixall">product name product name product name</a>
+                        <span class="mo-old-price">120 R.S.</span>
+                        <span class="mo-price">82 R.S. </span>
+                        <div class="tools">
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">اضف للسلة</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hint gift">free gift</div>
+                    <div class="hint sale">17% sale</div>
+                </div>
+                <div class="product">
+                    <a href="single-en.html" class="fixall item-img">
+                        <img src="images/pro2.jpg" class="img-responsive">
+                    </a>
+                    <div class="item-info">
+                        <div class="top-info">
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-reponsive"></a>
+                            <div class="stars">
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href="single-en.html" class="pro-name fixall">product name product name product name</a>
+                        <span class="mo-old-price">120 R.S.</span>
+                        <span class="mo-price">82 R.S. </span>
+                        <div class="tools">
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">اضف للسلة</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hint gift">free gift</div>
+                    <div class="hint sale">17% sale</div>
+                </div>
+                <div class="product">
+                    <a href="single-en.html" class="fixall item-img">
+                        <img src="images/pro1.jpg" class="img-responsive">
+                    </a>
+                    <div class="item-info">
+                        <div class="top-info">
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-reponsive"></a>
+                            <div class="stars">
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href="single-en.html" class="pro-name fixall">product name product name product name</a>
+                        <span class="mo-old-price">120 R.S.</span>
+                        <span class="mo-price">82 R.S. </span>
+                        <div class="tools">
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">اضف للسلة</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hint gift">free gift</div>
+                    <div class="hint sale">17% sale</div>
+                </div>
+                <div class="product">
+                    <a href="single-en.html" class="fixall item-img">
+                        <img src="images/pro2.jpg" class="img-responsive">
+                    </a>
+                    <div class="item-info">
+                        <div class="top-info">
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-reponsive"></a>
+                            <div class="stars">
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href="single-en.html" class="pro-name fixall">product name product name product name</a>
+                        <span class="mo-old-price">120 R.S.</span>
+                        <span class="mo-price">82 R.S. </span>
+                        <div class="tools">
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">اضف للسلة</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hint gift">free gift</div>
+                    <div class="hint sale">17% sale</div>
+                </div>
+                <div class="product">
+                    <a href="single-en.html" class="fixall item-img">
+                        <img src="images/pro2.jpg" class="img-responsive">
+                    </a>
+                    <div class="item-info">
+                        <div class="top-info">
+                            <a href="#!" class="store"><img src="images/store1.png" class="img-reponsive"></a>
+                            <div class="stars">
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span class="active"><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                        <a href="single-en.html" class="pro-name fixall">product name product name product name</a>
+                        <span class="mo-old-price">120 R.S.</span>
+                        <span class="mo-price">82 R.S. </span>
+                        <div class="tools">
+                            <a href="#!" class="fixall mo-add-to-cart mo-add-to">
+                                <span class="lnr lnr-cart"></span><span class="mo-text">اضف للسلة</span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-wish mo-add-to">
+                                <span class="lnr lnr-heart"></span>
+                            </a>
+                            <a href="#!" class="fixall mo-add-to-return mo-add-to">
+                                <span class="lnr lnr-sync"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hint gift">free gift</div>
+                    <div class="hint sale">17% sale</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end products -->
 
     <!-- start feats -->
     <div class="feats-cont">
@@ -405,6 +953,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
