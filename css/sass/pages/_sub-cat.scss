@@ -1,0 +1,330 @@
+/*////////////////////////new///////////////////////////////////*/
+.sub-content-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 19px;
+}
+
+.sub-cat-title {
+    font-size: 19px;
+    color: $text;
+    font-family: bold;
+}
+
+.compared-pro {
+    color: #0f87c9;
+    font-size: 14px;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover,
+    &:focus {
+        color: $red;
+    }
+}
+
+.sub-first-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-bottom: 1px solid #e5e5e5;
+
+    @include xs {
+        flex-direction: column;
+    }
+
+    .sub-search-cont {
+        position: relative;
+        height: 44px;
+        width: 258px;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .search-input {
+        padding: 0 27px;
+        border: 1px solid #e5e5e5;
+
+        &:focus {
+            border-color: $red;
+        }
+    }
+
+    .search-button {
+        left: 5px;
+
+        #{$ltr} & {
+            left: auto;
+            right: 5px;
+        }
+    }
+}
+
+.pros-info {
+    display: flex;
+    align-items: center;
+
+    @include xs {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+
+    @include xs {
+        margin-right: 0;
+        margin-top: 15px;
+    }
+
+    #{$ltr} & {
+        margin-left: 60px;
+        margin-right: 0;
+
+        @include xs {
+            margin-left: 0;
+        }
+    }
+}
+
+.mo-pros-num {
+    font-size: 14px;
+    color: $text;
+    font-family: med;
+    margin: 0 12px;
+}
+
+.page-btn {
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    color: #737373;
+    font-size: 13px;
+    margin-left: 6px;
+    font-family: bold;
+    background-color: #dbdbdb;
+    @include transition(all 0.3s ease-in-out);
+
+    #{$ltr} & {
+        margin-left: 0;
+        margin-right: 6px;
+    }
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: $green;
+    }
+}
+
+.sub-sec-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-bottom: 1px solid #e5e5e5;
+
+    @include xs {
+        flex-direction: column;
+    }
+}
+
+.preview-methods {
+    display: flex;
+    align-items: center;
+}
+
+.preview {
+    font-size: 14px;
+    font-family: med;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 13px;
+    @include transition(all 0.3s ease-in-out);
+
+    span {
+        font-size: 16px;
+        width: 22px;
+    }
+
+    &.active {
+        color: $blue;
+        pointer-events: none;
+    }
+
+    &:hover {
+        color: $red;
+    }
+
+    @include sm {
+        display: none;
+    }
+}
+
+.selects {
+    display: flex;
+    align-items: center;
+
+    @include xs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .label {
+        font-size: 14px;
+        color: $text;
+        font-family: med;
+    }
+}
+
+.filter-select {
+    @include xs {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .bootstrap-select {
+        &:not([class*=col-]) {
+            &:not([class*=form-control]) {
+                &:not(.input-group-btn) {
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    right: auto;
+                    width: 258px;
+                    height: 44px;
+                    border: 1px solid #e5e5e5;
+                    border-radius: 22px;
+                    color: #a9a9a9;
+
+                    @include xs {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+
+        .dropdown-toggle {
+            color: #a9a9a9;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: #a9a9a9;
+            }
+
+            .filter-option {
+                float: unset;
+                text-align: unset;
+                padding: 0;
+
+                #{$ltr} & {
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+}
+
+.preview-select {
+    @include xs {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bootstrap-select {
+        &:not([class*=col-]) {
+            &:not([class*=form-control]) {
+                &:not(.input-group-btn) {
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    right: auto;
+                    width: 118px;
+                    height: 44px;
+                    border: 1px solid #e5e5e5;
+                    border-radius: 22px;
+                    color: #a9a9a9;
+
+                    @include xs {
+                        flex: 1;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .dropdown-toggle {
+            color: #a9a9a9;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: #a9a9a9;
+            }
+
+            .filter-option {
+                float: unset;
+                text-align: unset;
+                padding: 0;
+
+                #{$ltr} & {
+                    text-align: left;
+                }
+            }
+
+        }
+    }
+}
+
+.product {
+    .hint {
+        margin: 0;
+    }
+}
+
+.mo-products {
+    margin-top: 5px;
+
+    .product {
+        margin-top: 30px;
+    }
+
+    .products-list {
+
+        .item-img {
+            width: 25%;
+        }
+
+
+        .gift {
+            left: auto;
+            right: calc(25% - 98px);
+
+            #{$ltr} & {
+                right: auto;
+                left: calc(25% - 98px);
+            }
+        }
+
+        .item-info {
+            padding: 0 15px;
+        }
+
+
+    }
+}

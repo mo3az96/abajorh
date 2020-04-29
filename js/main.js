@@ -6,6 +6,21 @@ $(window).on("load", function () {
     });
 });
 $(document).ready(function () {
+    $('.preview.grid-pre').click(function () {
+        $(".grid-pre").addClass("active");
+        $(".list-pre").removeClass("active");
+        $(".mo-products").removeClass("products-list");
+        $(".porduct-col").addClass("col-md-4");
+    });
+    $('.preview.list-pre').click(function () {
+        $(".list-pre").addClass("active");
+        $(".grid-pre").removeClass("active");
+        $(".mo-products").addClass("products-list");
+        $(".porduct-col").removeClass("col-md-4");
+    });
+
+
+
     $('.cats-btn').click(function () {
         $(".cats-dispaly").slideToggle("500");
         $(".cats-btn").toggleClass("open");

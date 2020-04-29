@@ -1207,6 +1207,50 @@ html[dir=ltr] .odd-head {
   background-color: #979463;
 }
 
+.products-list .product {
+  width: 100%;
+  display: flex;
+}
+.products-list .item-img {
+  padding: 0;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+.products-list .item-img::before {
+  padding-bottom: 100%;
+  content: "";
+}
+.products-list .hint {
+  margin: 0;
+}
+.products-list .gift {
+  left: auto;
+  right: calc(25% - 98px);
+}
+html[dir=ltr] .products-list .gift {
+  right: auto;
+  left: calc(20% - 98px);
+}
+.products-list .top-info {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.products-list .item-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0 15px;
+  justify-content: center;
+}
+.products-list .tools {
+  height: 100%;
+  justify-content: flex-end;
+}
+
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -3130,6 +3174,298 @@ html[dir=ltr] .qtySelector span.qty-decreas {
 }
 html[dir=ltr] .shop-advice:hover {
   transform: translateX(5px);
+}
+
+/*////////////////////////new///////////////////////////////////*/
+.sub-content-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 19px;
+}
+
+.sub-cat-title {
+  font-size: 19px;
+  color: #444444;
+  font-family: bold;
+}
+
+.compared-pro {
+  color: #0f87c9;
+  font-size: 14px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.compared-pro:hover, .compared-pro:focus {
+  color: #d55056;
+}
+
+.sub-first-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+@media (max-width: 767px) {
+  .sub-first-div {
+    flex-direction: column;
+  }
+}
+.sub-first-div .sub-search-cont {
+  position: relative;
+  height: 44px;
+  width: 258px;
+}
+.sub-first-div .sub-search-cont:after {
+  display: none;
+}
+.sub-first-div .search-input {
+  padding: 0 27px;
+  border: 1px solid #e5e5e5;
+}
+.sub-first-div .search-input:focus {
+  border-color: #d55056;
+}
+.sub-first-div .search-button {
+  left: 5px;
+}
+html[dir=ltr] .sub-first-div .search-button {
+  left: auto;
+  right: 5px;
+}
+
+.pros-info {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .pros-info {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+@media (max-width: 767px) {
+  .pages {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+}
+html[dir=ltr] .pages {
+  margin-left: 60px;
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .pages {
+    margin-left: 0;
+  }
+}
+
+.mo-pros-num {
+  font-size: 14px;
+  color: #444444;
+  font-family: med;
+  margin: 0 12px;
+}
+
+.page-btn {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 15px;
+  color: #737373;
+  font-size: 13px;
+  margin-left: 6px;
+  font-family: bold;
+  background-color: #dbdbdb;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+html[dir=ltr] .page-btn {
+  margin-left: 0;
+  margin-right: 6px;
+}
+.page-btn:hover, .page-btn:focus {
+  color: #fff;
+  background-color: #979463;
+}
+
+.sub-sec-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+@media (max-width: 767px) {
+  .sub-sec-div {
+    flex-direction: column;
+  }
+}
+
+.preview-methods {
+  display: flex;
+  align-items: center;
+}
+
+.preview {
+  font-size: 14px;
+  font-family: med;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 13px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.preview span {
+  font-size: 16px;
+  width: 22px;
+}
+.preview.active {
+  color: #07788c;
+  pointer-events: none;
+}
+.preview:hover {
+  color: #d55056;
+}
+@media (max-width: 992px) {
+  .preview {
+    display: none;
+  }
+}
+
+.selects {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .selects {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.selects .label {
+  font-size: 14px;
+  color: #444444;
+  font-family: med;
+}
+
+@media (max-width: 767px) {
+  .filter-select {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
+.filter-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  width: 258px;
+  height: 44px;
+  border: 1px solid #e5e5e5;
+  border-radius: 22px;
+  color: #a9a9a9;
+}
+@media (max-width: 767px) {
+  .filter-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    flex: 1;
+  }
+}
+.filter-select .bootstrap-select .dropdown-toggle {
+  color: #a9a9a9;
+}
+.filter-select .bootstrap-select .dropdown-toggle:hover, .filter-select .bootstrap-select .dropdown-toggle:focus, .filter-select .bootstrap-select .dropdown-toggle:active {
+  color: #a9a9a9;
+}
+.filter-select .bootstrap-select .dropdown-toggle .filter-option {
+  float: unset;
+  text-align: unset;
+  padding: 0;
+}
+html[dir=ltr] .filter-select .bootstrap-select .dropdown-toggle .filter-option {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .preview-select {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+.preview-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  width: 118px;
+  height: 44px;
+  border: 1px solid #e5e5e5;
+  border-radius: 22px;
+  color: #a9a9a9;
+}
+@media (max-width: 767px) {
+  .preview-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    flex: 1;
+    width: 100%;
+  }
+}
+.preview-select .bootstrap-select .dropdown-toggle {
+  color: #a9a9a9;
+}
+.preview-select .bootstrap-select .dropdown-toggle:hover, .preview-select .bootstrap-select .dropdown-toggle:focus, .preview-select .bootstrap-select .dropdown-toggle:active {
+  color: #a9a9a9;
+}
+.preview-select .bootstrap-select .dropdown-toggle .filter-option {
+  float: unset;
+  text-align: unset;
+  padding: 0;
+}
+html[dir=ltr] .preview-select .bootstrap-select .dropdown-toggle .filter-option {
+  text-align: left;
+}
+
+.product .hint {
+  margin: 0;
+}
+
+.mo-products {
+  margin-top: 5px;
+}
+.mo-products .product {
+  margin-top: 30px;
+}
+.mo-products .products-list .item-img {
+  width: 25%;
+}
+.mo-products .products-list .gift {
+  left: auto;
+  right: calc(25% - 98px);
+}
+html[dir=ltr] .mo-products .products-list .gift {
+  right: auto;
+  left: calc(25% - 98px);
+}
+.mo-products .products-list .item-info {
+  padding: 0 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
