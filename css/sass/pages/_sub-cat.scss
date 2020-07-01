@@ -328,3 +328,40 @@
 
     }
 }
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+.cats-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+    .cat {
+        margin: 10px 15px 0;
+
+        @include md {
+            margin: 10px 10px 0;
+        }
+
+        @include sm {
+            margin: 10px auto 0;
+        }
+
+        &:nth-of-type(2),
+        &:nth-of-type(5),
+        &:nth-of-type(8) {
+            .cat-img {
+                background-color: $yellow;
+            }
+        }
+
+        &:nth-of-type(3),
+        &:nth-of-type(6),
+        &:nth-of-type(9) {
+            .cat-img {
+                background-color: $red;
+            }
+        }
+    }
+}

@@ -48,29 +48,6 @@ $(document).ready(function () {
         navText: ["<span class='lnr lnr-chevron-right'></span>", "<span class='lnr lnr-chevron-left'></span>"],
 
     });
-    /////////cats Slider/////////
-    $('.cats-slider').owlCarousel({
-        items: 7,
-        margin: 26,
-        rtl: document.dir == 'rtl' ? true : false,
-        loop: false,
-        dots: true,
-        nav: false,
-        responsive: {
-            0: {
-                items: 2,
-            },
-            500: {
-                items: 3,
-            },
-            992: {
-                items: 5,
-            },
-            1200: {
-                items: 7
-            }
-        }
-    });
     /////////Products Slider/////////
     $('.Product-slider').owlCarousel({
         items: 4,
@@ -196,4 +173,28 @@ $(document).ready(function () {
             $(".lang").show();
         }
     });
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////cats Slider/////////
+    if ($(window).width() <= 991) {
+        $('.cats-slider').addClass("owl-carousel")
+        $('.cats-slider').owlCarousel({
+            margin: 26,
+            rtl: document.dir == 'rtl' ? true : false,
+            loop: true,
+            dots: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                500: {
+                    items: 3,
+                },
+                992: {
+                    items: 5,
+                },
+            }
+        });
+    }
+
 });
